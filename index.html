@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Music Player Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome ICON-->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style.css CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="player-container">
+    <!-- Song -->
+    <div class="img-container">
+        <img src="img/jacinto-1.jpg" alt="Album Art">
+    </div>
+    <h2 id="title">Electric Chill Machine</h2>
+    <h3 id="artist">Jacinto</h3>
+    <audio id="audio" src="music/jacinto-1.mp3"></audio>
+    <!-- Progress -->
+    <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+            <div class="duration">
+                <span id="current-time">0:00</span>/
+                <span id="duration">2:06</span>
+            </div>
+            <div class="download-volume-container">
+                <div id="volume-container" class="volume-container">
+                    <span id="volume" class="fas fa-volume-up"></span>
+                    <div class="volume-bar" id="volume-bar">
+                        <div class="volume-progress" id="volume-progress"></div>
+                    </div>
+                </div>
+                <span id="download" class="fas fa-download"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main-button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Previous"></i>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
